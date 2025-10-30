@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galaxy Wars & Hangman - Análisis Completo y Review | Nota 2.5/10</title>
+	<meta name="description" content="Review profesional de Galaxy Wars & Hangman para Aamber Pegasus: análisis exhaustivo de gráficos, sonido, jugabilidad y rejugabilidad. Nota final 2.5/10.">
+	<meta name="keywords" content="Galaxy Wars, Hangman, Aamber Pegasus, review, análisis, retro computing, 1981">
+	<meta name="author" content="InsertMoreCoins">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://www.insertmorecoins.es/reviews/aamber-pegasus/galaxy-wars-hangman">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://www.insertmorecoins.es/reviews/aamber-pegasus/galaxy-wars-hangman">
+	<meta property="og:title" content="Galaxy Wars & Hangman - Review 2.5/10">
+	<meta property="og:description" content="Review profesional de Galaxy Wars & Hangman para Aamber Pegasus.">
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Review",
+	  "itemReviewed": {
+	    "@type": "VideoGame",
+	    "name": "Galaxy Wars & Hangman",
+	    "genre": ["Arcade", "Word Game"],
+	    "gamePlatform": "Aamber Pegasus"
+	  },
+	  "reviewRating": {
+	    "@type": "Rating",
+	    "ratingValue": "2.5",
+	    "bestRating": "10",
+	    "worstRating": "1"
+	  },
+	  "author": {"@type": "Person", "name": "InsertMoreCoins"},
+	  "datePublished": "2025-10-30"
+	}
+	</script>
+	<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+	<script>
+	  window.googletag = window.googletag || {cmd: []};
+	  googletag.cmd.push(function() {
+	    googletag.defineSlot('/23282289404/ReviewHeader', [[970, 90], [728, 90], [468, 60], [320, 50]], 'div-gpt-ad-header').addService(googletag.pubads());
+	    googletag.defineSlot('/23282289404/ReviewBetween1', [[300, 250], [300, 600]], 'div-gpt-ad-between1').addService(googletag.pubads());
+	    googletag.defineSlot('/23282289404/ReviewBetween2', [[300, 250], [300, 600]], 'div-gpt-ad-between2').addService(googletag.pubads());
+	    googletag.defineSlot('/23282289404/ReviewBetween3', [[970, 250], [728, 90], [300, 250], [320, 100]], 'div-gpt-ad-between3').addService(googletag.pubads());
+	    googletag.defineSlot('/23282289404/ReviewFooter', [[970, 250], [728, 90], [300, 250], [320, 50]], 'div-gpt-ad-footer').addService(googletag.pubads());
+	    googletag.pubads().enableSingleRequest();
+	    googletag.pubads().collapseEmptyDivs();
+	    googletag.pubads().enableLazyLoad({fetchMarginPercent: 200, renderMarginPercent: 100, mobileScaling: 2.0});
+	    googletag.enableServices();
+	  });
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+	<style>
+		:root[data-theme="dark"] {
+			--bg-primary: linear-gradient(135deg, #000a00 0%, #001a00 100%);
+			--bg-secondary: rgba(0, 26, 0, 0.9);
+			--bg-section: rgba(0, 51, 0, 0.7);
+			--bg-header: linear-gradient(90deg, #003300 0%, #00cc44 100%);
+			--text-primary: #ffffff;
+			--text-secondary: #e0ffe0;
+			--text-muted: #99cc99;
+			--accent-primary: #00cc44;
+			--accent-secondary: #ffaa00;
+			--border-color: rgba(0, 204, 68, 0.3);
+			--shadow-main: 0 15px 40px rgba(0, 204, 68, 0.3);
+			--sidebar-bg: rgba(0, 10, 0, 0.95);
+			--sidebar-border: #00cc44;
+		}
+
+		:root[data-theme="light"] {
+			--bg-primary: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%);
+			--bg-secondary: #ffffff;
+			--bg-section: #f0fff0;
+			--bg-header: linear-gradient(90deg, #00cc44 0%, #00ff55 100%);
+			--text-primary: #003300;
+			--text-secondary: #004d00;
+			--text-muted: #006600;
+			--accent-primary: #00cc44;
+			--accent-secondary: #ffaa00;
+			--border-color: rgba(0, 204, 68, 0.3);
+			--shadow-main: 0 15px 40px rgba(0, 204, 68, 0.2);
+			--sidebar-bg: #ffffff;
+			--sidebar-border: #00cc44;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+
+		body {
+			background: var(--bg-primary);
+			color: var(--text-primary);
+			min-height: 100vh;
+			padding: 20px;
+			line-height: 1.7;
+			transition: background 0.3s ease;
+		}
+
+		.reading-progress-bar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 4px;
+			background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+			z-index: 9999;
+			transition: width 0.1s ease;
+		}
+
+		.theme-toggle {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+			background: var(--accent-primary);
+			border: none;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			font-size: 1.5rem;
+			cursor: pointer;
+			box-shadow: 0 4px 15px rgba(0, 204, 68, 0.4);
+			transition: transform 0.3s ease;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #000;
+		}
+
+		.theme-toggle:hover {
+			transform: scale(1.1);
+		}
+
+		.scroll-to-top {
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			z-index: 999;
+			background: var(--accent-secondary);
+			color: #000;
+			border: none;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			font-size: 1.5rem;
+			cursor: pointer;
+			box-shadow: 0 4px 15px rgba(255, 170, 0, 0.4);
+			transition: all 0.3s ease;
+			opacity: 0;
+			visibility: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.scroll-to-top.visible {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.scroll-to-top:hover {
+			transform: translateY(-5px);
+		}
+
+		.layout-container {
+			max-width: 1400px;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 250px 1fr;
+			gap: 30px;
+		}
+
+		.sidebar {
+			position: sticky;
+			top: 20px;
+			height: fit-content;
+			background: var(--sidebar-bg);
+			border: 2px solid var(--sidebar-border);
+			border-radius: 12px;
+			padding: 20px;
+			box-shadow: 0 8px 25px rgba(0, 204, 68, 0.3);
+		}
+
+		.sidebar h3 {
+			color: var(--accent-primary);
+			margin-bottom: 15px;
+			font-size: 1.1rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.sidebar-nav {
+			list-style: none;
+		}
+
+		.sidebar-nav li {
+			margin-bottom: 10px;
+		}
+
+		.sidebar-nav a {
+			color: var(--text-secondary);
+			text-decoration: none;
+			display: block;
+			padding: 8px 12px;
+			border-radius: 6px;
+			transition: all 0.3s ease;
+			border-left: 3px solid transparent;
+		}
+
+		.sidebar-nav a:hover, .sidebar-nav a.active {
+			background: rgba(0, 204, 68, 0.1);
+			border-left-color: var(--accent-primary);
+			padding-left: 15px;
+		}
+
+		.rating-box {
+			background: var(--bg-section);
+			padding: 20px;
+			border-radius: 10px;
+			text-align: center;
+			margin-top: 20px;
+			border: 2px solid var(--accent-secondary);
+		}
+
+		.rating-box h3 {
+			color: var(--accent-secondary);
+			margin-bottom: 10px;
+			font-size: 0.9rem;
+		}
+
+		.rating-value {
+			font-size: 3rem;
+			font-weight: 900;
+			color: var(--accent-secondary);
+			line-height: 1;
+		}
+
+		.rating-value::after {
+			content: '/10';
+			font-size: 1.5rem;
+			opacity: 0.6;
+		}
+
+		.main-content {
+			background: var(--bg-secondary);
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: var(--shadow-main);
+			border: 2px solid var(--border-color);
+		}
+
+		header {
+			background: var(--bg-header);
+			padding: 40px 30px;
+			text-align: center;
+			border-bottom: 3px solid var(--accent-primary);
+		}
+
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 15px;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+			color: #fff;
+		}
+
+		.subtitle {
+			font-size: 1.2rem;
+			color: rgba(255, 255, 255, 0.9);
+			font-weight: 300;
+		}
+
+		.game-info {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 15px;
+			background: var(--bg-section);
+			padding: 20px;
+			border-bottom: 2px solid var(--border-color);
+		}
+
+		.info-item {
+			text-align: center;
+		}
+
+		.info-label {
+			font-size: 0.85rem;
+			color: var(--text-muted);
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+
+		.info-value {
+			font-size: 1.1rem;
+			font-weight: bold;
+			color: var(--accent-primary);
+		}
+
+		.review-content {
+			padding: 40px;
+		}
+
+		.review-section {
+			margin-bottom: 40px;
+			background: var(--bg-section);
+			padding: 25px;
+			border-radius: 12px;
+			border-left: 6px solid var(--accent-primary);
+			box-shadow: 0 5px 15px rgba(0, 204, 68, 0.2);
+		}
+
+		.section-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid var(--border-color);
+		}
+
+		.section-title {
+			font-size: 1.8rem;
+			color: var(--accent-primary);
+			font-weight: 600;
+		}
+
+		.animated-rating {
+			font-size: 2.5rem;
+			font-weight: 900;
+			transition: color 0.1s ease;
+		}
+
+		.animated-rating::after {
+			content: '/10';
+			font-size: 1.2rem;
+			opacity: 0.6;
+		}
+
+		.section-description {
+			font-size: 1.1rem;
+			color: var(--text-secondary);
+			margin-bottom: 20px;
+			line-height: 1.8;
+		}
+
+		.detail-point {
+			margin-bottom: 15px;
+			padding-left: 15px;
+			border-left: 3px solid var(--accent-secondary);
+			color: var(--text-secondary);
+		}
+
+		.detail-point strong {
+			color: var(--accent-primary);
+		}
+
+		.image-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 20px;
+			margin: 25px 0;
+			padding: 15px;
+			overflow: hidden;
+			border-radius: 8px;
+		}
+
+		.image-placeholder {
+			width: 100%;
+			height: 250px;
+			background: rgba(0, 51, 0, 0.5);
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 8px 25px rgba(0, 204, 68, 0.3);
+			cursor: pointer;
+			transition: transform 0.3s ease;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: var(--text-muted);
+			padding: 20px;
+			border: 2px dashed var(--accent-primary);
+			font-size: 0.95rem;
+		}
+
+		.image-gallery a {
+			text-decoration: none;
+			display: block;
+		}
+
+		.image-gallery a:hover .image-placeholder {
+			transform: scale(1.02);
+		}
+
+		.pros-cons {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 25px;
+			margin: 30px 0;
+		}
+
+		.pros, .cons {
+			background: var(--bg-section);
+			padding: 25px;
+			border-radius: 12px;
+		}
+
+		.pros {
+			border-left: 5px solid var(--accent-primary);
+		}
+
+		.cons {
+			border-left: 5px solid #ff4444;
+		}
+
+		.pros h3, .cons h3 {
+			margin-bottom: 20px;
+			font-size: 1.3rem;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			color: var(--text-primary);
+		}
+
+		.pros ul, .cons ul {
+			list-style: none;
+		}
+
+		.pros li, .cons li {
+			margin-bottom: 12px;
+			padding-left: 25px;
+			position: relative;
+			color: var(--text-secondary);
+		}
+
+		.pros li:before {
+			content: "✓";
+			position: absolute;
+			left: 0;
+			color: var(--accent-primary);
+			font-weight: bold;
+		}
+
+		.cons li:before {
+			content: "✗";
+			position: absolute;
+			left: 0;
+			color: #ff4444;
+			font-weight: bold;
+		}
+
+		.verdict {
+			background: var(--bg-section);
+			padding: 40px;
+			text-align: center;
+			border-radius: 15px;
+			margin-top: 30px;
+			border: 3px solid var(--accent-primary);
+		}
+
+		.verdict-title {
+			font-size: 2.3rem;
+			margin-bottom: 20px;
+			color: var(--accent-primary);
+		}
+
+		.final-rating {
+			font-size: 5rem;
+			font-weight: 900;
+			margin-bottom: 25px;
+			color: var(--accent-secondary);
+		}
+
+		.final-rating::after {
+			content: '/10';
+			font-size: 2.5rem;
+			opacity: 0.6;
+		}
+
+		.verdict-description {
+			font-size: 1.15rem;
+			line-height: 1.9;
+			color: var(--text-secondary);
+			text-align: left;
+			margin-bottom: 20px;
+		}
+
+		.btn {
+			padding: 12px 30px;
+			border-radius: 25px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: all 0.3s ease;
+			border: 2px solid;
+			cursor: pointer;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+		.btn-primary {
+			background: var(--accent-primary);
+			color: #000;
+			border-color: var(--accent-primary);
+		}
+
+		.btn-primary:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(0, 204, 68, 0.4);
+		}
+
+		.ad-container {
+			margin: 40px 0;
+			padding: 20px 0;
+			text-align: center;
+			background: rgba(0, 26, 0, 0.3);
+			border-top: 1px solid var(--border-color);
+			border-bottom: 1px solid var(--border-color);
+			min-height: 60px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.ad-label {
+			font-size: 0.75rem;
+			color: var(--text-muted);
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+
+		#div-gpt-ad-header { min-height: 90px; }
+		#div-gpt-ad-between1 { min-height: 250px; }
+		#div-gpt-ad-between2 { min-height: 250px; }
+		#div-gpt-ad-between3 { min-height: 250px; }
+		#div-gpt-ad-footer { min-height: 90px; }
+
+		.review-meta {
+			background: var(--bg-section);
+			padding: 20px;
+			border-radius: 12px;
+			margin-top: 30px;
+			font-size: 0.95rem;
+			color: var(--text-muted);
+			border-left: 4px solid var(--accent-secondary);
+		}
+
+		.review-meta div {
+			margin-bottom: 10px;
+		}
+
+		.review-meta strong {
+			color: var(--accent-primary);
+		}
+
+		@media (max-width: 1024px) {
+			.layout-container { grid-template-columns: 1fr; }
+			.sidebar { position: relative; top: 0; }
+			h1 { font-size: 2.3rem; }
+			.section-title { font-size: 1.5rem; }
+		}
+
+		@media (max-width: 768px) {
+			body { padding: 10px; }
+			h1 { font-size: 1.8rem; }
+			.review-content { padding: 20px; }
+			.image-gallery { grid-template-columns: 1fr; padding: 10px; }
+			.image-placeholder { height: 200px; }
+			.section-title { font-size: 1.3rem; }
+			.verdict-description { font-size: 1rem; }
+		}
+
+		@media (max-width: 480px) {
+			body { padding: 5px; }
+			h1 { font-size: 1.3rem; }
+			.subtitle { font-size: 0.9rem; }
+			.game-info { grid-template-columns: 1fr; }
+			.review-content { padding: 15px; }
+			.section-title { font-size: 1.1rem; }
+			.section-description { font-size: 0.95rem; }
+			.detail-point { font-size: 0.9rem; }
+		}
+		
+		.action-buttons {
+			display: flex;
+			gap: 15px;
+			margin-top: 30px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.btn-secondary {
+			background: var(--accent-secondary);
+			color: #000;
+			border-color: var(--accent-secondary);
+		}
+
+		.btn-secondary:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(255, 170, 0, 0.4);
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="reading-progress-bar" id="readingProgressBar"></div>
+	<button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+	<button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">↑</button>
+
+	<div class="layout-container">
+		<aside class="sidebar">
+			<h3>📑 Índice</h3>
+			<ul class="sidebar-nav">
+				<li><a href="#graphics">🎨 Graphics</a></li>
+				<li><a href="#sound">🔊 Sound</a></li>
+				<li><a href="#gameplay">🎮 Gameplay</a></li>
+				<li><a href="#replay">🔄 Replay Value</a></li>
+				<li><a href="#fun">😄 Fun Factor</a></li>
+				<li><a href="#verdict">⚖️ Veredicto</a></li>
+			</ul>
+
+			<div class="rating-box">
+				<h3>NOTA FINAL</h3>
+				<div class="rating-value">2.5</div>
+			</div>
+		</aside>
+
+		<div class="main-content">
+			<header>
+				<div style="text-align: center; margin: 30px auto;"><img src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/banner.webp" alt="Invaders" class="lazy" data-src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/banner.webp" style="max-width: 800px; width: 100%; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.6);"></div>
+				<p class="subtitle">Arqueología digital: compilación obsoleta del rarísimo Aamber Pegasus neozelandés</p>
+			</header>
+
+			<div class="game-info">
+				<div class="info-item">
+					<div class="info-label">Género</div>
+					<div class="info-value">Arcade / Puzzle</div>
+				</div>
+				<div class="info-item">
+					<div class="info-label">Desarrollador</div>
+					<div class="info-value">Nigel Keam</div>
+				</div>
+				<div class="info-item">
+					<div class="info-label">Plataforma</div>
+					<div class="info-value">Aamber Pegasus</div>
+				</div>
+				<div class="info-item">
+					<div class="info-label">Año</div>
+					<div class="info-value">1981 🇳🇿</div>
+				</div>
+				<div class="info-item">
+					<div class="info-label">Estado</div>
+					<div class="info-value">Preservado MAME</div>
+				</div>
+			</div>
+
+			<main class="review-content">
+				<div class="image-gallery">
+					<a href="https://via.placeholder.com/800x600/2a2a3e/00cc44?text=Banner+Galaxy+Wars" 
+					   class="glightbox" 
+					   data-gallery="game-gallery"
+					   data-description="Banner del juego Galaxy Wars & Hangman">
+						<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='639' height='361'%3E%3C/svg%3E" data-src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/screenshot_1.webp" class="lazy" style="width: 639px; height: 361px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); display: block; margin: 25px auto; cursor: pointer;" onclick="openLightbox(this.dataset.src)">
+					</a>
+				</div>
+
+				<div class="ad-container">
+					<div class="ad-label">Publicidad - PC / Tablet / Mobile</div>
+					<div id='div-gpt-ad-header'>
+						<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-header'); });</script>
+					</div>
+				</div>
+
+				<article id="graphics" class="review-section">
+					<div class="section-header">
+						<h2 class="section-title">🎨 GRAPHICS</h2>
+						<div class="animated-rating" data-rating="2.0">0.0</div>
+					</div>
+
+					<p class="section-description">
+						Los gráficos son brutalmente primitivos. El Aamber Pegasus operaba con 64x16 caracteres texto y 512x256 píxeles monocromo, hardware ya obsoleto en 1981. Galaxy Wars & Hangman exponen estas limitaciones sin piedad absoluta.
+					</p>
+
+					<div class="detail-point">
+						<strong>Galaxy Wars - ASCII espacial:</strong> Todo son caracteres semigráficos. Alienígenas = bloques de texto. Tu nave = triángulo ASCII. Monocromo absoluto (verde/ámbar sobre negro). Comparado con Space Invaders (1978) con sprites y color, esto luce arcaico.
+					</div>
+
+					<div class="detail-point">
+						<strong>Hangman - Funcional pero feo:</strong> El ahorcado se dibuja con guiones y barras ASCII. Es legible, pero versiones en papel lucen mejor. Cero estilo visual. Bloques de texto nada más.
+					</div>
+
+					<div class="image-gallery">
+						<a href="https://via.placeholder.com/800x600/2a2a3e/00cc44?text=Galaxy+Wars+ASCII" 
+						   class="glightbox" 
+						   data-gallery="game-gallery"
+						   data-description="Interfaz de Galaxy Wars mostrando enemigos ASCII">
+							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='639' height='361'%3E%3C/svg%3E" data-src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/screenshot_2.webp" class="lazy" style="width: 639px; height: 361px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); display: block; margin: 25px auto; cursor: pointer;" onclick="openLightbox(this.dataset.src)">
+						</a>
+						<a href="https://via.placeholder.com/800x600/2a2a3e/00cc44?text=Hangman+Screen" 
+						   class="glightbox" 
+						   data-gallery="game-gallery"
+						   data-description="Pantalla del juego Hangman">
+							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='639' height='361'%3E%3C/svg%3E" data-src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/screenshot_3.webp" class="lazy" style="width: 639px; height: 361px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); display: block; margin: 25px auto; cursor: pointer;" onclick="openLightbox(this.dataset.src)">
+						</a>
+					</div>
+				</article>
+
+				<article id="sound" class="review-section">
+					<div class="section-header">
+						<h2 class="section-title">🔊 SOUND</h2>
+						<div class="animated-rating" data-rating="1.5">0.0</div>
+					</div>
+
+					<p class="section-description">
+						El sonido es prácticamente inexistente. El Pegasus carecía de chip de audio dedicado, dependiendo del speaker interno. Resultado: pitidos monotonales que harían sonrojar a un reloj digital de los 70.
+					</p>
+
+					<div class="detail-point">
+						<strong>Galaxy Wars:</strong> Pitido al disparar. Pitido al impactar. Pitido al morir. Nada más. Sin música, sin ambientación, sin atmósfera. El silencio sería preferible.
+					</div>
+
+					<div class="detail-point">
+						<strong>Hangman:</strong> Pitido de confirmación. Pitido de error. Tres tonos al ganar. Funcionalmente aceptable pero completamente olvidable. Desapercibido a los 10 segundos.
+					</div>
+				</article>
+
+				<div class="ad-container">
+					<div class="ad-label">Publicidad - PC / Tablet / Mobile</div>
+					<div id='div-gpt-ad-between1'>
+						<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-between1'); });</script>
+					</div>
+				</div>
+
+				<article id="gameplay" class="review-section">
+					<div class="section-header">
+						<h2 class="section-title">🎮 GAMEPLAY</h2>
+						<div class="animated-rating" data-rating="4.0">0.0</div>
+					</div>
+
+					<p class="section-description">
+						La jugabilidad es lo único que salva esto del desastre total. Ambos juegos ejecutan mecánicas básicas correctamente, aunque sin innovación alguna. Funcionan, pero eso es todo.
+					</p>
+
+					<div class="detail-point">
+						<strong>Galaxy Wars:</strong> Space Invaders despojado de todo lo bueno. Mueves con flechas, disparas con barra espaciadora, enemigos descienden. Un proyectil a la vez. Sin escudos, sin nodriza, sin power-ups, sin nada especial. Aburrido desde el minuto uno.
+					</div>
+
+					<div class="detail-point">
+						<strong>Hangman:</strong> Seleccionas letras con el teclado, adivinas palabras, tienes 7 intentos. Es literalmente el juego del ahorcado de toda la vida. Funciona exactamente como esperas. Vocabulario limitado (~50-100 palabras). Predecible rápidamente.
+					</div>
+
+					<div class="image-gallery">
+						<a href="https://via.placeholder.com/800x600/2a2a3e/00cc44?text=Galaxy+Wars+Action" 
+						   class="glightbox" 
+						   data-gallery="game-gallery"
+						   data-description="Acción de Galaxy Wars con enemigos atacando">
+							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='639' height='361'%3E%3C/svg%3E" data-src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/screenshot_4.webp" class="lazy" style="width: 639px; height: 361px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); display: block; margin: 25px auto; cursor: pointer;" onclick="openLightbox(this.dataset.src)">
+						</a>
+						<a href="https://via.placeholder.com/800x600/2a2a3e/00cc44?text=Hangman+Game" 
+						   class="glightbox" 
+						   data-gallery="game-gallery"
+						   data-description="Pantalla de juego del ahorcado">
+							<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='639' height='361'%3E%3C/svg%3E" data-src="https://raw.githubusercontent.com/InsertMoreCoins/database-aamber-pegasus/main/invaders/screenshot_5.webp" class="lazy" style="width: 639px; height: 361px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); display: block; margin: 25px auto; cursor: pointer;" onclick="openLightbox(this.dataset.src)">
+						</a>
+					</div>
+				</article>
+
+				<article id="replay" class="review-section">
+					<div class="section-header">
+						<h2 class="section-title">🔄 REPLAY VALUE</h2>
+						<div class="animated-rating" data-rating="1.5">0.0</div>
+					</div>
+
+					<p class="section-description">
+						Rejugabilidad nula. Una vez lo juegas 5-10 minutos, has visto literalmente TODO. No hay razón alguna para volver a él.
+					</p>
+
+					<div class="detail-point">
+						<strong>Galaxy Wars:</strong> Idéntico cada partida. Sin récords guardados, sin tabla de puntuaciones, sin ningún tipo de variación. Los niveles no cambian. Rejugabilidad: cero absoluto.
+					</div>
+
+					<div class="detail-point">
+						<strong>Hangman:</strong> Con probablemente menos de 100 palabras en la base de datos, reconoces patrones de palabras en 15-20 minutos. Sin progresión, sin logros, sin estructura de campañas.
+					</div>
+				</article>
+
+				<div class="ad-container">
+					<div class="ad-label">Publicidad - PC / Tablet / Mobile</div>
+					<div id='div-gpt-ad-between2'>
+						<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-between2'); });</script>
+					</div>
+				</div>
+
+				<article id="fun" class="review-section">
+					<div class="section-header">
+						<h2 class="section-title">😄 FUN FACTOR</h2>
+						<div class="animated-rating" data-rating="2.0">0.0</div>
+					</div>
+
+					<p class="section-description">
+						Seamos brutalmente honestos: esto no es divertido. No lo era en 1981 comparado con Pac-Man o Donkey Kong, y definitivamente no lo es en 2025.
+					</p>
+
+					<div class="detail-point">
+						<strong>Comparación brutal:</strong> En 1981 ya existían Pac-Man, Donkey Kong, Defender, Centipede, Asteroids. Comparar Galaxy Wars con cualquiera de ellos es cruel. Esto luce como si fuera de 5 años antes.
+					</div>
+
+					<div class="detail-point">
+						<strong>Valor exclusivamente histórico:</strong> Como artefacto museístico es valioso. Como juego es aburrido. Lo juegas una vez por curiosidad académica y lo cierras para siempre.
+					</div>
+				</article>
+
+				<div class="ad-container">
+					<div class="ad-label">Publicidad - PC / Tablet / Mobile</div>
+					<div id='div-gpt-ad-between3'>
+						<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-between3'); });</script>
+					</div>
+				</div>
+
+				<div class="pros-cons">
+					<div class="pros">
+						<h3><span>✓</span> LO ÚNICO RESCATABLE</h3>
+						<ul>
+							<li>Valor histórico como pieza de museo del retro computing neozelandés</li>
+							<li>Perfectamente preservado en MAME para generaciones futuras</li>
+							<li>Hangman funciona correctamente (aunque es genérico)</li>
+							<li>Controles responden dentro de limitaciones técnicas del hardware</li>
+							<li>Interés educativo para estudiar software primitivo temprano</li>
+						</ul>
+					</div>
+					<div class="cons">
+						<h3><span>✗</span> LA CRUDA REALIDAD</h3>
+						<ul>
+							<li>Completamente obsoleto e injugable en 2025</li>
+							<li>Gráficos ASCII brutalmente primitivos</li>
+							<li>Sonido prácticamente inexistente</li>
+							<li>Galaxy Wars es clon ultra-básico sin innovación</li>
+							<li>Hangman no añade nada a la fórmula tradicional</li>
+							<li>Hardware del Pegasus terriblemente obsoleto (2KB RAM)</li>
+							<li>Rejugabilidad cero absoluto</li>
+							<li>Sin guardado de puntuaciones ni progresión</li>
+							<li>Diversión objetiva nula</li>
+							<li>Interés exclusivamente arqueológico</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ad-container">
+					<div class="ad-label">Publicidad - PC / Tablet / Mobile</div>
+					<div id='div-gpt-ad-between4'>
+						<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-between4'); });</script>
+					</div>
+				</div>
+
+				<div id="verdict" class="verdict">
+					<h2 class="verdict-title">⚖️ VEREDICTO FINAL</h2>
+					<div class="final-rating animated-rating" data-rating="2.5" aria-label="Nota final: 2.5 sobre 10">0.0</div>
+	
+					<p class="verdict-description">
+						Seamos brutalmente honestos: Galaxy Wars & Hangman es objetivamente malo como experiencia de juego en 2025. La nota de 2.5/10 es generosa considerando que técnicamente merecería 1-2/10 comparado con cualquier alternativa disponible en el mercado. Los gráficos ASCII monocromos son primitivos incluso para 1981. El sonido es inexistente. La jugabilidad, aunque correcta, es aburrida sin innovación alguna. Rejugabilidad nula, diversión inexistente.
+					</p>
+
+					<p class="verdict-description">
+						Galaxy Wars es un clon de Space Invaders despojado de todo lo bueno que hacía interesante al original. Hangman es el ahorcado más genérico posible sin nada especial. Los 0.5-1 punto extra vienen exclusivamente del valor histórico como pieza de museo del retro computing neozelandés. El Aamber Pegasus representa un momento fascinante en la historia: con solo ~100 unidades vendidas en toda la historia, cada programa que sobrevive es un artefacto arqueológico invaluable para preservar. Gracias a MAME, estas piezas de historia no se perdieron en el tiempo.
+					</p>
+
+					<p class="verdict-description">
+						Para historiadores del retro computing y preservacionistas digitales, este software tiene valor museístico innegable. Pero para jugadores actuales buscando entretenimiento: no pierdan su tiempo. Esto es arqueología digital pura, no diversión funcional moderna. Juégalo una vez por curiosidad histórica y ciérralo sin remordimientos.
+					</p>
+
+					<div class="action-buttons">
+						<a href="https://www.ebay.com/sch/i.html?_nkw=Aamber+Pegasus+retro+computer&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339129028&customid=review-verdict&toolid=10001&mkevt=1" 
+							target="_blank" 
+							rel="noopener nofollow sponsored"
+							class="btn btn-primary">
+							🛒 Ver Ofertas en eBay
+						</a>
+						<a href="https://www.youtube.com/results?search_query=Aamber+Pegasus+gameplay" 
+							target="_blank"
+							rel="noopener"
+							class="btn btn-secondary">
+							📺 Ver Gameplay
+						</a>
+					</div>
+				</div>
+
+				<div class="review-meta">
+					<div><strong>Plataforma analizada:</strong> MAME (Emulador) - Aamber Pegasus original</div>
+					<div><strong>Fecha de publicación:</strong> 30 de Octubre, 2025</div>
+					<div><strong>Última actualización:</strong> 30 de Octubre, 2025</div>
+					<div><strong>Fuentes:</strong> Archive.org, Classic Computers NZ, Wikipedia, MAME Documentation</div>
+					<div><strong>Nota:</strong> Review honesta. Valor histórico ≠ calidad de juego actual.</div>
+				</div>
+
+				<div class="ad-container">
+					<div class="ad-label">Publicidad - PC / Tablet / Mobile</div>
+					<div id='div-gpt-ad-footer'>
+						<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-footer'); });</script>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+	<script>
+		const lightbox = GLightbox({
+			touchNavigation: true,
+			loop: true,
+			closeButton: true
+		});
+
+		function updateReadingProgress() {
+			const content = document.querySelector('.review-content');
+			if (!content) return;
+			const contentTop = content.offsetTop;
+			const contentHeight = content.offsetHeight;
+			const windowHeight = window.innerHeight;
+			const scrollTop = window.scrollY;
+			const startPoint = contentTop - windowHeight / 2;
+			const endPoint = contentTop + contentHeight - windowHeight / 2;
+			let progress = 0;
+			if (scrollTop > startPoint) {
+				progress = Math.min((scrollTop - startPoint) / (endPoint - startPoint) * 100, 100);
+			}
+			document.getElementById('readingProgressBar').style.width = progress + '%';
+		}
+
+		window.addEventListener('scroll', updateReadingProgress);
+		window.addEventListener('resize', updateReadingProgress);
+
+		const scrollToTopBtn = document.getElementById('scrollToTop');
+		window.addEventListener('scroll', () => {
+			scrollToTopBtn.classList.toggle('visible', window.scrollY > 500);
+		});
+		scrollToTopBtn.addEventListener('click', () => {
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		});
+
+		const themeToggle = document.getElementById('themeToggle');
+		const htmlElement = document.documentElement;
+
+		function loadTheme() {
+			const savedTheme = localStorage.getItem('theme') || 'dark';
+			htmlElement.setAttribute('data-theme', savedTheme);
+			themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+		}
+
+		themeToggle.addEventListener('click', () => {
+			const currentTheme = htmlElement.getAttribute('data-theme');
+			const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+			htmlElement.setAttribute('data-theme', newTheme);
+			localStorage.setItem('theme', newTheme);
+			themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+		});
+
+		loadTheme();
+
+		function getRatingColor(rating) {
+			const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+			if (isDark) {
+				if (rating < 4.0) return '#ff4444';
+				if (rating < 6.0) return '#ffaa00';
+				if (rating < 7.0) return '#ffd700';
+				if (rating < 8.0) return '#90ee90';
+				if (rating < 9.0) return '#00cc44';
+				return '#00ff55';
+			} else {
+				if (rating < 4.0) return '#cc0000';
+				if (rating < 6.0) return '#ff8800';
+				if (rating < 7.0) return '#ccaa00';
+				if (rating < 8.0) return '#66cc66';
+				if (rating < 9.0) return '#00aa33';
+				return '#00dd44';
+			}
+		}
+
+		function animateCounter(element, targetRating, duration = 1500) {
+			const startTime = performance.now();
+			function updateCounter(currentTime) {
+				const elapsed = currentTime - startTime;
+				const progress = Math.min(elapsed / duration, 1);
+				const currentValue = targetRating * progress;
+				element.textContent = currentValue.toFixed(1);
+				element.style.color = getRatingColor(currentValue);
+				if (progress < 1) {
+					requestAnimationFrame(updateCounter);
+				} else {
+					element.textContent = targetRating.toFixed(1);
+					element.style.color = getRatingColor(targetRating);
+				}
+			}
+			requestAnimationFrame(updateCounter);
+		}
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+					const rating = parseFloat(entry.target.getAttribute('data-rating'));
+					animateCounter(entry.target, rating);
+					entry.target.classList.add('animated');
+				}
+			});
+		}, {threshold: 0.5});
+
+		document.addEventListener('DOMContentLoaded', function() {
+			updateReadingProgress();
+			document.querySelectorAll('.animated-rating').forEach(element => {
+				observer.observe(element);
+			});
+		});
+
+		document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+				this.classList.add('active');
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		window.addEventListener('scroll', () => {
+			let current = '';
+			document.querySelectorAll('.review-section').forEach(section => {
+				const sectionTop = section.offsetTop;
+				if (window.scrollY >= sectionTop - 100) {
+					current = section.getAttribute('id');
+				}
+			});
+
+			document.querySelectorAll('.sidebar-nav a').forEach(a => {
+				a.classList.remove('active');
+				if (a.getAttribute('href') === `#${current}`) {
+					a.classList.add('active');
+				}
+			});
+		});
+	</script>
+
+<div id="lightbox" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95);" onclick="event.target === this && closeLightbox()">
+    <span style="position: absolute; top: 20px; right: 40px; color: #f1f1f1; font-size: 50px; font-weight: bold; cursor: pointer;" onclick="closeLightbox()">&times;</span>
+    <span style="position: absolute; top: 50%; left: 30px; transform: translateY(-50%); font-size: 3em; color: #ffaa00; cursor: pointer; padding: 20px; user-select: none; background: rgba(0,0,0,0.5); border-radius: 10px;" onclick="prevImage()">&#10094;</span>
+    <img id="lightbox-img" style="margin: auto; display: block; max-width: 90%; max-height: 90%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;">
+    <span style="position: absolute; top: 50%; right: 30px; transform: translateY(-50%); font-size: 3em; color: #ffaa00; cursor: pointer; padding: 20px; user-select: none; background: rgba(0,0,0,0.5); border-radius: 10px;" onclick="nextImage()">&#10095;</span>
+    <div id="lightbox-counter" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: #ffaa00; font-size: 1.2em; font-weight: bold; background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 10px;"></div>
+</div>
+<script>
+let currentLightboxImages = [];
+let currentLightboxIndex = 0;
+function openLightbox(src) {
+    const reviewImages = Array.from(document.querySelectorAll('img[onclick*="openLightbox"]')).map(img => img.dataset.src || img.src);
+    currentLightboxImages = reviewImages;
+    currentLightboxIndex = reviewImages.indexOf(src);
+    document.getElementById('lightbox').style.display = 'block';
+    document.getElementById('lightbox-img').src = src;
+    updateLightboxCounter();
+    document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = 'auto';
+    currentLightboxImages = [];
+    currentLightboxIndex = 0;
+}
+function prevImage() {
+    if (currentLightboxImages.length > 0) {
+        currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxImages.length) % currentLightboxImages.length;
+        document.getElementById('lightbox-img').src = currentLightboxImages[currentLightboxIndex];
+        updateLightboxCounter();
+    }
+}
+function nextImage() {
+    if (currentLightboxImages.length > 0) {
+        currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxImages.length;
+        document.getElementById('lightbox-img').src = currentLightboxImages[currentLightboxIndex];
+        updateLightboxCounter();
+    }
+}
+function updateLightboxCounter() {
+    const counter = document.getElementById('lightbox-counter');
+    if (currentLightboxImages.length > 1) {
+        counter.textContent = (currentLightboxIndex + 1) + ' / ' + currentLightboxImages.length;
+        counter.style.display = 'block';
+    } else {
+        counter.style.display = 'none';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+                img.classList.add('loaded');
+                observer.unobserve(img);
+            }
+        });
+    });
+    lazyImages.forEach(img => imageObserver.observe(img));
+});
+
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox.style.display === 'block') {
+        if (e.key === 'Escape') closeLightbox();
+        else if (e.key === 'ArrowLeft') prevImage();
+        else if (e.key === 'ArrowRight') nextImage();
+    }
+});
+</script>
+<style>
+img.lazy {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+img.loaded {
+    opacity: 1;
+}
+</style></body>
+</html>
